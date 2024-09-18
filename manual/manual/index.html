@@ -21,7 +21,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/django.min.js"></script>
         <script>hljs.highlightAll();</script> 
-    </head>
+     <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
 
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
@@ -38,6 +42,22 @@
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
                                 <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../installation/installation/" class="nav-link">Installation</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Manual</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../manual_production/" class="dropdown-item">Manual for production</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Manual for checkers</a>
+</li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">About</a>
@@ -59,11 +79,16 @@
                         </ul>
 
                     <ul class="nav navbar-nav ms-md-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../manual_production/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../about/release_notes/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
                               <button id="theme-menu" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
                                 <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
@@ -116,13 +141,139 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#checking-tools" class="nav-link">Checking tools</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#switch-view" class="nav-link">Switch view</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#print-report" class="nav-link">Print report</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#about" class="nav-link">About</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#evaluation" class="nav-link">Evaluation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#measure-the-wing-and-evaluate" class="nav-link">Measure the wing and evaluate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#the-evaluation-sheet" class="nav-link">The Evaluation sheet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#trimming" class="nav-link">Trimming</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#generate-trimming-options" class="nav-link">Generate trimming options</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#using-the-trimmers" class="nav-link">Using the trimmers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#finalization" class="nav-link">Finalization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
 <h1 id="manual-for-checkers">Manual for checkers</h1>
-<p>hi</p></div>
+<p>This manual covers the tools that are available to checkers using WingChecker.</p>
+<p>It also covers the basic usage manual.</p>
+<h1 id="checking-tools">Checking tools</h1>
+<p>WingChecker offers certain handy tools - all available in the ribbon.</p>
+<h2 id="switch-view">Switch view</h2>
+<p>By clicking on <strong>Switch view</strong> button, you can zoom-in or zoom-out during your measuring. This only affects the <em>Measuring</em> sheet.</p>
+<h2 id="print-report">Print report</h2>
+<p>By clicking <strong>Print report</strong> a <code>pdf</code> file of the <em>Evaluation</em> sheet is generated. You can save it to your local disc.</p>
+<p>Example report can be downloaded <a download="WingChecker_example_report" href="../../files/example_report.pdf">here</a>.</p>
+<div class="admonition note inline">
+<p class="admonition-title">Print report button disabled?</p>
+<p>Yes. Print report button is disabled until <strong>Evaluation</strong> button is clicked.</p>
+</div>
+<h2 id="about">About</h2>
+<p>The <strong>About</strong> button will give you some insight into the WingChecker Add-in. Things like developers, version,... will be written there.</p>
+<h1 id="evaluation">Evaluation</h1>
+<p>For evaluation, follow this section.</p>
+<h2 id="measure-the-wing-and-evaluate">Measure the wing and evaluate</h2>
+<p>After each line from <em>Measuring</em> sheet has the measured length, go ahead and press the <strong>Evaulation</strong> button from the ribbon.</p>
+<div class="admonition warning">
+<p class="admonition-title">Missing line lengths</p>
+<p>By pressing the <strong>Evaluation</strong> button, WingChecker will verify that <strong>all</strong> lines were measured. In case any measurement is missing, a warnning is issued.</p>
+</div>
+<h2 id="the-evaluation-sheet">The <em>Evaluation</em> sheet</h2>
+<p>If all went right, your <em>Evaluation</em> sheet should look similar to 
+<a class="glightbox" href="../../images/evaluation_no_trims.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/evaluation_no_trims.png" width="100%" /></a></p>
+<h3 id="formatting-explained">Formatting explained</h3>
+<p>The wingchecker uses different (conditional) formatting rules for better experience:</p>
+<ul>
+<li><span style="color:cyan"><strong>CYAN:</strong></span> means that your input is expected. These cells are unlocked.</li>
+<li><span style="color:RED"><strong>RED:</strong></span> means that some tolerance is violated.</li>
+<li><span style="color:GREEN"><strong>GREEN:</strong></span> means that the tolerance is not violated.</li>
+<li>
+<p><strong>Line level colors:</strong> Each line is colored by a corresponding line level. A legend can be found on the very right.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Stabilo and brake lines are always marked <strong>S</strong> and <strong>F</strong> respectively.</p>
+</div>
+</li>
+<li>
+<p><strong>Number underlined twice:</strong> Means that the deviation to the same line on the other side of the wing is larger than the allowed tolerance.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure you fill all the cyan-colored cells.</p>
+</div>
+<h1 id="trimming">Trimming</h1>
+<p>To enable the trimming, click on <strong>Trim settings</strong> button in the ribbon.</p>
+<h2 id="generate-trimming-options">Generate trimming options</h2>
+<p>By clicking the <strong>Trim settings</strong> the following form opens:
+<a class="glightbox" href="../../images/current_trim_form.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/current_trim_form.png" width="70%" /></a></p>
+<p>Here you have to select the current (i.e. before the completed check) trim setup for all the main lines and for both sides of the wing.</p>
+<p>All main lines are listed as rows in each table. Columns are the available trim options.</p>
+<div class="admonition note inline">
+<p class="admonition-title">Trim options</p>
+<ul>
+<li><strong>AS+:</strong> cow hitch + single loop.</li>
+<li><strong>AS:</strong> cow hitch.</li>
+<li><strong>DL (default for new wings):</strong> double loop.</li>
+<li><strong>SL:</strong> single loop</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Each main line is expected to contain only one "x". An example of valid input is shown in the image above.</p>
+</div>
+<p>Once satisfied, click on the <strong>Generate trimming options</strong> button. This will generate trimming options on your <em>Evaluation</em> sheet. You should see something similar to this:</p>
+<p><a class="glightbox" href="../../images/evaluation_with_trims.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/evaluation_with_trims.png" width="100%" /></a></p>
+<h2 id="using-the-trimmers">Using the trimmers</h2>
+<p>To use the trimmers, simply click on the selected trim option. A dropdown all possible trimming options appears. Select the one you fell is most appropriate.</p>
+<p><a class="glightbox" href="../../images/trimmers_using.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/trimmers_using.png" width="80%" /></a></p>
+<p>After selection, the WingChecker will shorten/lengthen <strong>all</strong> lines that are attached to the corresponding main line you just changed.</p>
+<h1 id="finalization">Finalization</h1>
+<p>Before you close the workbook:</p>
+<ol>
+<li>(Optional) print report.</li>
+<li>Save.</li>
+</ol></div>
             </div>
         </div>
 
@@ -136,29 +287,8 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js"></script>
-        <script src="../../search/main.js"></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -199,5 +329,6 @@
     </div>
 </div>
 
-    </body>
+    <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
 </html>

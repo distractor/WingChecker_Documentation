@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Manual for production - WingChecker documentation</title>
+        <title>Installation - WingChecker documentation</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -44,18 +44,18 @@
                                 <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../../installation/installation/" class="nav-link">Installation</a>
+                                <a href="./" class="nav-link active" aria-current="page">Installation</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Manual</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Manual</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Manual for production</a>
+    <a href="../../manual/manual_production/" class="dropdown-item">Manual for production</a>
 </li>
                                     
 <li>
-    <a href="../manual/" class="dropdown-item">Manual for checkers</a>
+    <a href="../../manual/manual/" class="dropdown-item">Manual for checkers</a>
 </li>
                                 </ul>
                             </li>
@@ -80,12 +80,12 @@
 
                     <ul class="nav navbar-nav ms-md-auto">
                             <li class="nav-item">
-                                <a rel="prev" href="../../installation/installation/" class="nav-link">
+                                <a rel="prev" href="../.." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../manual/" class="nav-link">
+                                <a rel="next" href="../../manual/manual_production/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -137,13 +137,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#manual-for-production" class="nav-link">Manual for production</a>
+            <li class="nav-item" data-bs-level="1"><a href="#installation" class="nav-link">Installation</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#how-to-prepare-a-new-check-workbook" class="nav-link">How to prepare a new check workbook</a>
+            <li class="nav-item" data-bs-level="2"><a href="#requirements" class="nav-link">Requirements</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#evaluation" class="nav-link">Evaluation</a>
+            <li class="nav-item" data-bs-level="2"><a href="#install" class="nav-link">Install</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#verify-installation" class="nav-link">Verify installation</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -154,47 +158,31 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="manual-for-production">Manual for production</h1>
-<p>This manual covers the creation of a check workbook using WingChecker. </p>
-<p>This manual is only relevant for the designers, as they are also the only ones with the input that is required to generate a check workbook.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you are a checker, then you are likely interested in <a href="../manual/">Manual for checkers</a>.</p>
-</div>
-<h2 id="how-to-prepare-a-new-check-workbook">How to prepare a new check workbook</h2>
-<p>To prepare a new check workbook:</p>
-<ol>
-<li>Open a new instance of Excel.</li>
-<li>Navigate to <strong>Add-ins</strong> in the ribbon.</li>
-<li>Click on the very left <strong>Create workbook</strong> button. A new form opens.</br>
-    <a class="glightbox" href="../../images/create_workbook_blank.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/create_workbook_blank.png" width="400" /></a></li>
-<li>Click on <strong>Select file</strong> button and navigate to the Excel file that is ouput from <strong>WingDesigner</strong> for a particular wing.</li>
-<li>Click the <strong>Load data</strong> button. If loading was successful, this will unlock the second part of the form and fill it with some default data. </br>
-    <a class="glightbox" href="../../images/create_workbook_filled.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/create_workbook_filled.png" width="400" /></a></li>
-<li><strong>Optional:</strong> Set value for <strong>Wing name</strong> or leave the defult.</li>
-<li>
-<p>Trim setup:</p>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>Checkers are not able to modify this data.</p>
-</div>
-<p>Each entry in the table defines the amount of line length change. Per row all main lines are listed. Per column, all available trimming options are listed.</p>
-<div class="admonition note inline">
-<p class="admonition-title">Trimming options</p>
+<h1 id="installation">Installation</h1>
+<h2 id="requirements">Requirements</h2>
 <ul>
-<li><strong>AS+:</strong> cow hitch + single loop.</li>
-<li><strong>AS:</strong> cow hitch.</li>
-<li><strong>DL (default for new wings):</strong> double loop.</li>
-<li><strong>SL:</strong> single loop</li>
+<li>Windows operating system</li>
+<li>Installed Microsoft Office Excel</li>
 </ul>
-</div>
-</li>
-<li>
-<p>Click <strong>Create</strong> button.</p>
-</li>
+<h2 id="install">Install</h2>
+<p>To install the WingChecker VSTO Excel Add-in follow these steps:</p>
+<ol>
+<li>Download WingChecker from <a download="WingChecker" href="../../files/wingchecker_publish.zip">here</a>.</li>
+<li>Unzip downloaded file. The contents you should see are
+    <div class="highlight"><pre><span></span><code>Application<span class="w"> </span>Files/
+setup.exe
+WingChecker.vsto
+</code></pre></div></li>
+<li>Double click on <code>setup.exe</code> to install Add-in.</li>
+<li>Accept any warnings and wait for installation to complete.</li>
 </ol>
-<h2 id="evaluation">Evaluation</h2>
-<p>For manual on evaluation, please proceed to the <a href="../manual/">Manual for checkers</a>.</p></div>
+<h2 id="verify-installation">Verify installation</h2>
+<p>To verify installation:</p>
+<ol>
+<li>Start a new instance of Excel</li>
+</ol>
+<p>If the installation was successful, you should see the Add-in in the <strong>Add-ins</strong> tab.
+<a class="glightbox" href="../../images/verify_installation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/verify_installation.png" width="500" /></a></p></div>
             </div>
         </div>
 
