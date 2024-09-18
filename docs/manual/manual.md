@@ -1,0 +1,3 @@
+# Manual for checkers
+
+hi

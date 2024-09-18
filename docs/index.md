@@ -1,17 +1,16 @@
-# Welcome to MkDocs
+# Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+WingChecker is a VSTO Excel Add-in written in C#.
 
-## Commands
+The add-in is designed to check the line lengths on paragliders, providing valuable insights for quality control and safety check.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Overview
 
-## Project layout
+Check out the following contents:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [Manual for production](manual/manual_production.md)
+- [Manual for checkers](manual/manual.md)
+- [Release notes](about/release_notes.md)
+- About:
+    - [Licensing](about/license.md)
+    - [Contributing](about/contributing.md)
