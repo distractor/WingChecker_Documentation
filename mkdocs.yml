@@ -14,9 +14,15 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
 
+plugins:
+  - glightbox
+  
 nav:
   - Home: index.md
+  - Installation: installation/installation.md
   - Manual:
     - Manual for production: manual/manual_production.md
     - Manual for checkers: manual/manual.md

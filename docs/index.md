@@ -8,9 +8,10 @@ The add-in is designed to check the line lengths on paragliders, providing valua
 
 Check out the following contents:
 
+- [Installation](installation/installation.md)
 - [Manual for production](manual/manual_production.md)
 - [Manual for checkers](manual/manual.md)
-- [Release notes](about/release_notes.md)
 - About:
     - [Licensing](about/license.md)
     - [Contributing](about/contributing.md)
+- [Release notes](about/release_notes.md)
