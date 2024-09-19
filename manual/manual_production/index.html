@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Manual for production - WingChecker documentation</title>
+        <title>Manual for Production - WingChecker documentation</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/fontawesome.min.css" rel="stylesheet">
         <link href="../../css/brands.min.css" rel="stylesheet">
@@ -51,11 +51,11 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Manual for production</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Manual for Production</a>
 </li>
                                     
 <li>
-    <a href="../manual/" class="dropdown-item">Manual for checkers</a>
+    <a href="../manual/" class="dropdown-item">Manual for Checkers</a>
 </li>
                                 </ul>
                             </li>
@@ -137,13 +137,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#manual-for-production" class="nav-link">Manual for production</a>
+            <li class="nav-item" data-bs-level="1"><a href="#manual-for-production" class="nav-link">Manual for Production</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#how-to-prepare-a-new-check-workbook" class="nav-link">How to prepare a new check workbook</a>
+            <li class="nav-item" data-bs-level="2"><a href="#preparing-a-new-check-workbook" class="nav-link">Preparing a New Check Workbook</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#evaluation" class="nav-link">Evaluation</a>
+            <li class="nav-item" data-bs-level="2"><a href="#evaluation-process" class="nav-link">Evaluation Process</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -154,47 +154,46 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="manual-for-production">Manual for production</h1>
-<p>This manual covers the creation of a check workbook using WingChecker. </p>
-<p>This manual is only relevant for the designers, as they are also the only ones with the input that is required to generate a check workbook.</p>
+<h1 id="manual-for-production">Manual for Production</h1>
+<p>This guide explains how to create a check workbook using <strong>WingChecker</strong>. It is intended for <strong>designers</strong> who possess the necessary input files required to generate the workbook.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are a checker, then you are likely interested in <a href="../manual/">Manual for checkers</a>.</p>
+<p>If you are a checker, please refer to the <a href="../manual/">Checkers' Manual</a> for relevant instructions.</p>
 </div>
-<h2 id="how-to-prepare-a-new-check-workbook">How to prepare a new check workbook</h2>
+<h2 id="preparing-a-new-check-workbook">Preparing a New Check Workbook</h2>
 <p>To prepare a new check workbook:</p>
 <ol>
-<li>Open a new instance of Excel.</li>
-<li>Navigate to <strong>Add-ins</strong> in the ribbon.</li>
-<li>Click on the very left <strong>Create workbook</strong> button. A new form opens.</br>
-    <a class="glightbox" href="../../images/create_workbook_blank.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/create_workbook_blank.png" width="400" /></a></li>
-<li>Click on <strong>Select file</strong> button and navigate to the Excel file that is ouput from <strong>WingDesigner</strong> for a particular wing.</li>
-<li>Click the <strong>Load data</strong> button. If loading was successful, this will unlock the second part of the form and fill it with some default data. </br>
-    <a class="glightbox" href="../../images/create_workbook_filled.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/create_workbook_filled.png" width="400" /></a></li>
-<li><strong>Optional:</strong> Set value for <strong>Wing name</strong> or leave the defult.</li>
+<li><strong>Launch Excel</strong>: Open a new instance of Microsoft Excel.</li>
+<li><strong>Access the Add-ins Tab</strong>: Navigate to the <strong>Add-ins</strong> section located on the ribbon.</li>
+<li><strong>Initiate Workbook Creation</strong>: Click the <strong>Create Workbook</strong> button (located on the far left). A new form will appear.<br />
+<a class="glightbox" href="../../images/create_workbook_blank.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Workbook Creation Form" src="../../images/create_workbook_blank.png" width="400" /></a></li>
+<li><strong>Select Input File</strong>: Click <strong>Select File</strong>, then navigate to the Excel file generated by <strong>WingDesigner</strong> for the respective wing.</li>
+<li><strong>Load Data</strong>: Click <strong>Load Data</strong>. Once the data is successfully loaded, the second part of the form will become available and pre-filled with default values.<br />
+<a class="glightbox" href="../../images/create_workbook_filled.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Form with Loaded Data" src="../../images/create_workbook_filled.png" width="400" /></a></li>
+<li><strong>Optional Step</strong>: Input the <strong>Wing Name</strong> or retain the default name provided.</li>
 <li>
-<p>Trim setup:</p>
+<p><strong>Configure Trim Setup</strong>: 
+    The table displayed defines the adjustments to line lengths. Rows correspond to main lines, while columns represent various trimming options.</p>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p>Checkers are not able to modify this data.</p>
 </div>
-<p>Each entry in the table defines the amount of line length change. Per row all main lines are listed. Per column, all available trimming options are listed.</p>
 <div class="admonition note inline">
 <p class="admonition-title">Trimming options</p>
 <ul>
-<li><strong>AS+:</strong> cow hitch + single loop.</li>
-<li><strong>AS:</strong> cow hitch.</li>
-<li><strong>DL (default for new wings):</strong> double loop.</li>
-<li><strong>SL:</strong> single loop</li>
+<li><strong>AS+:</strong> Cow hitch with a single loop</li>
+<li><strong>AS:</strong> Cow hitch only</li>
+<li><strong>DL:</strong> Double loop (this is the default for new wings) </li>
+<li><strong>SL:</strong> Single loop</li>
 </ul>
 </div>
 </li>
 <li>
-<p>Click <strong>Create</strong> button.</p>
+<p><strong>Finalize the Workbook</strong>: Once all necessary configurations are made, click the <strong>Create</strong> button to generate the check workbook.</p>
 </li>
 </ol>
-<h2 id="evaluation">Evaluation</h2>
-<p>For manual on evaluation, please proceed to the <a href="../manual/">Manual for checkers</a>.</p></div>
+<h2 id="evaluation-process">Evaluation Process</h2>
+<p>For information regarding the evaluation process, please refer to the <a href="../manual/">Checkers' Manual</a>.</p></div>
             </div>
         </div>
 
