@@ -10,8 +10,7 @@
 
 To install the WingChecker VSTO Excel Add-in follow these steps:
 
-1. Download WingChecker from [here](../files/wingchecker.vsto){:download="WingCheckerVSTO"}.
-1. Download WingChecker from [here](../files/wingchecker_publish.zip){:download="WingChecker"}.
+1. Download `WingChecker.exe` from [here](../files/setup.exe){:download="WingChecker"}.
 2. Unzip downloaded file. The contents you should see are
     ```sh
     Application Files/
