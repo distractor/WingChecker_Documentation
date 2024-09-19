@@ -1,101 +1,93 @@
-# Manual for checkers
+# Manual for Checkers
 
-This manual covers the tools that are available to checkers using WingChecker.
+This guide outlines the tools and functionalities available to checkers using **WingChecker**. It also provides instructions for basic usage.
 
-It also covers the basic usage manual.
 
-# Checking tools
+# Available Checking Tools
 
-WingChecker offers certain handy tools - all available in the ribbon.
+WingChecker offers several tools designed to assist in the evaluation process. All tools are accessible via the **ribbon** in Excel.
 
-## Switch view
+## Switch View
 
-By clicking on **Switch view** button, you can zoom-in or zoom-out during your measuring. This only affects the *Measuring* sheet.
+The **Switch View** button allows you to zoom in or out while conducting measurements. This function is limited to the *Measuring* sheet and helps improve visibility during the checking process.
 
-## Print report
+## Print Report
 
-By clicking **Print report** a `pdf` file of the *Evaluation* sheet is generated. You can save it to your local disc.
+By selecting **Print Report**, a `PDF` version of the *Evaluation* sheet is generated, which you can save locally.
 
-Example report can be downloaded [here](../files/example_report.pdf){:download="WingChecker_example_report"}.
+An example report can be downloaded [here](../files/example_report.pdf){:download="WingChecker_example_report"}.
 
 !!! note inline "Print report button disabled?"
-    Yes. Print report button is disabled until **Evaluation** button is clicked.
+    The **Print Report** button will remain disabled until the **Evaluation** button has been clicked.
 
 ## About
 
-The **About** button will give you some insight into the WingChecker Add-in. Things like developers, version,... will be written there.
+Clicking the **About** button provides information regarding the WingChecker Add-in, including details about the development team, version number, and other relevant technical information.
 
-# Evaluation
+# Evaluation Process
 
-For evaluation, follow this section.
+This section guides you through the process of evaluating a wing using WingChecker.
 
-## Measure the wing and evaluate
+## Measuring and Evaluating the Wing
 
-After each line from *Measuring* sheet has the measured length, go ahead and press the **Evaulation** button from the ribbon.
+Once you have input all measured line lengths in the *Measuring* sheet, click the **Evaluation** button on the ribbon to begin the evaluation process.
 
 !!! warning "Missing line lengths"
-    By pressing the **Evaluation** button, WingChecker will verify that **all** lines were measured. In case any measurement is missing, a warnning is issued.
+    WingChecker will verify that all lines have been measured. If any measurements are missing, a warning will be displayed, and the evaluation will not proceed.
 
-## The *Evaluation* sheet
+## The *Evaluation* Sheet
 
-If all went right, your *Evaluation* sheet should look similar to 
-![Image title](../images/evaluation_no_trims.png){ width=100%}
+Upon successful evaluation, the *Evaluation* sheet will display the results. It should resemble the following example:  
+![Evaluation Example](../images/evaluation_no_trims.png){ width=100% }
 
-### Formatting explained
+### Formatting Rules
 
-The wingchecker uses different (conditional) formatting rules for better experience:
+To enhance clarity, WingChecker employs conditional formatting in the *Evaluation* sheet:
 
-- <span style="color:cyan">**CYAN:**</span> means that your input is expected. These cells are unlocked.
-- <span style="color:RED">**RED:**</span> means that some tolerance is violated.
-- <span style="color:GREEN">**GREEN:**</span> means that the tolerance is not violated.
-- **Line level colors:** Each line is colored by a corresponding line level. A legend can be found on the very right.
+- **CYAN**: Indicates where user input is required. These cells are editable.
+- **RED**: Signals that a tolerance limit has been exceeded.
+- **GREEN**: Indicates that the line is within the allowed tolerance.
+- **Line Level Colors**: Each line is color-coded according to its level. A legend explaining these levels is located on the far right of the sheet. Stabilo and brake lines are consistently marked with **S** and **F**, respectively.
+- **Double Underlined Numbers**: These signify that the deviation between the same lines on opposite sides of the wing exceeds the permissible tolerance.
 
-    !!! note
-        Stabilo and brake lines are always marked **S** and **F** respectively.
 
-- **Number underlined twice:** Means that the deviation to the same line on the other side of the wing is larger than the allowed tolerance.
+!!! note inline "Reminder"
+    Ensure all cyan-colored cells are filled in correctly.
 
-!!! note
-    Make sure you fill all the cyan-colored cells.
+# Trimming Setup
 
-# Trimming
+To configure trimming, click the **Trim Settings** button on the ribbon.
 
-To enable the trimming, click on **Trim settings** button in the ribbon.
+## Generating Trimming Options
 
-## Generate trimming options
-
-By clicking the **Trim settings** the following form opens:
+Clicking **Trim Settings** opens a form where you can select the initial trim setup (i.e., prior to the completed check) for each main line on both sides of the wing.
 ![Image title](../images/current_trim_form.png){ width=70%}
+</br>Each row in the table corresponds to a main line, and each column represents an available trimming option.
 
-Here you have to select the current (i.e. before the completed check) trim setup for all the main lines and for both sides of the wing.
 
-All main lines are listed as rows in each table. Columns are the available trim options.
 
-!!! note inline "Trim options"
+!!! note inline "Trimming options"
     - **AS+:** cow hitch + single loop.
     - **AS:** cow hitch.
     - **DL (default for new wings):** double loop.
     - **SL:** single loop
 
 !!! warning
-    Each main line is expected to contain only one "x". An example of valid input is shown in the image above.
+    Each main line should have only one "x" in its corresponding row, indicating the selected trimming option. An example of valid input is shown in the form image above.
 
-Once satisfied, click on the **Generate trimming options** button. This will generate trimming options on your *Evaluation* sheet. You should see something similar to this:
+Once the form is completed, click **Generate Trimming Options** to apply the selected trim settings to the *Evaluation* sheet. The result should resemble the following example:  
+![Evaluation with Trims](../images/evaluation_with_trims.png){ width=100% }
 
+## Using the Trimmers
 
-![Image title](../images/evaluation_with_trims.png){ width=100%}
+To apply trimmers, select the desired trim option from the dropdown menu.  
+![Using Trimmers](../images/trimmers_using.png){ width=80% }
 
-## Using the trimmers
-
-To use the trimmers, simply click on the selected trim option. A dropdown all possible trimming options appears. Select the one you fell is most appropriate.
-
-![Image title](../images/trimmers_using.png){ width=80%}
-
-After selection, the WingChecker will shorten/lengthen **all** lines that are attached to the corresponding main line you just changed.
+After selection, WingChecker will automatically adjust all lines attached to the selected main line according to the chosen trim option.
 
 # Finalization
 
-Before you close the workbook:
+Before closing the workbook, ensure the following:
 
-1. (Optional) print report.
-2. Save.
+1. (Optional) Print the evaluation report.
+2. Save the workbook.

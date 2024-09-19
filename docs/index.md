@@ -15,3 +15,7 @@ Check out the following contents:
     - [Licensing](about/license.md)
     - [Contributing](about/contributing.md)
 - [Release notes](about/release_notes.md)
+
+# Support
+
+For support, please contact <info@nova.eu>.

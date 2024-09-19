@@ -1,6 +1,14 @@
 # Release notes
 
-## 18.9.2024
+## v1.0.0.21
+
+### Added
+
+- Publishing and automatic updates.
+
+## Fixed
+
+## v1.0.0.0
 
 ### Added
 

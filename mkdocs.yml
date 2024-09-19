@@ -24,8 +24,8 @@ nav:
   - Home: index.md
   - Installation: installation/installation.md
   - Manual:
-    - Manual for production: manual/manual_production.md
-    - Manual for checkers: manual/manual.md
+    - Manual for Production: manual/manual_production.md
+    - Manual for Checkers: manual/manual.md
   - About:
     - Release Notes: about/release_notes.md
     - Contributing: about/contributing.md
