@@ -4,6 +4,7 @@
 
 - Windows operating system
 - Installed Microsoft Office Excel
+- Internet connection
 
 ## Install
 
@@ -27,3 +28,7 @@ To verify installation:
 
 If the installation was successful, you should see the Add-in in the **Add-ins** tab.
 ![Image title](../images/verify_installation.png){ width=500}
+
+# Uninstall
+
+To uninstall go to **Add or remove programs** control panel on your windows, search for **WingChecker** and uninstall.
