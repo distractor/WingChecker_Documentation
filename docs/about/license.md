@@ -12,7 +12,7 @@ Many thanks to the authors and contributors of those wonderful projects.
 
 Copyright © 2024, [Mitja Jančič](https://distractor.github.io/). All rights reserved.
 
-!!! note inline "Redistribution"
+!!! note "Redistribution"
     Redistribution and use in source and binary forms, with or without modification,
     are permitted provided that the following conditions are met:
 
@@ -21,7 +21,7 @@ Copyright © 2024, [Mitja Jančič](https://distractor.github.io/). All rights r
     - Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the
     distribution.
 
-!!! danger inline "Modification"
+!!! danger "Modification"
     Any sort of modification to the source or binary files is permitted without an agreement with the developers.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
