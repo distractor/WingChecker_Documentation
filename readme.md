@@ -8,4 +8,4 @@ To deploy simply run
 mkdocs gh-deploy
 ```
 
-This pushes new commit to `gh-pages` branch, which is used to serve to documentation.Ł
+This pushes new commit to `gh-pages` branch, which is used to serve the documentation.
