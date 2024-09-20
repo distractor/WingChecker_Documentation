@@ -36,11 +36,11 @@ If the installation was successful, the WingChecker Add-in will be visible in th
 
 ![Image title](../images/verify_installation.png){ width=70%}
 
-# Updating
+## Updating
 
 Excel checks for an update every time you launch a new instance. If a new version of **WingChecker** is available, it will automatically install it.
 
-# Uninstallation
+## Uninstallation
 
 To uninstall the WingChecker VSTO Excel Add-in, follow these steps:
 
