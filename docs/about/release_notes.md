@@ -6,9 +6,10 @@
 
 - Publishing and automatic updates.
 
-## Fixed
+### Fixed
 
 - File structure.
+- Documentation deployment.
 
 ## v1.0.0.0
 
