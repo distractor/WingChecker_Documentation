@@ -2,3 +2,4 @@
 *.deploy binary
 *.manifest binary
 *.exe binary
+*.zip binary
