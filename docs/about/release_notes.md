@@ -1,6 +1,16 @@
 # Release notes
 
-## v1.0.0.XX [12.01.2024]
+## v1.0.1.22 [21.09.2024]
+
+### Added
+- Publishing and updates from documentation page.
+
+### Fixed
+
+- Creation box
+- Conditional formatting
+
+## v1.0.0.30
 
 ### Added
 
