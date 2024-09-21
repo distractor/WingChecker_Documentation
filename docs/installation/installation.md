@@ -1,19 +1,45 @@
 # Installation
 
-## Requirements
+Requirements:
 
 - Windows operating system
 - Installed Microsoft Office Excel
 - Internet connection
 
+!!! warning 
+    Since this is not a native Windows application, you have to install a digital certificate **before** you install the add-in. Follow [certificate installation](#installing-digital-certificate) instructions below.
+
 ## Install
 
 To install the WingChecker VSTO Excel Add-in follow these steps:
 
+### Installing Digital Certificate
+
+1. **Download the digital certificate:** The certificate is delivered together with the WingChecker package. You can download the `WingChecker.cer` file from [**here**](../files/MyKey.cer){:download="WingChecker.cer"}.
+2. **Install the certificate:**
+    1. **Run *Command Prompt* as administrator**: [How to run the command prompt in Windows?](https://support.kaspersky.com/common/windows/14637#block0)
+    2. **Navigate to the directory with `WingChecker.cer`:** Normally, the default location for downloaded files is in the *Downloads* directory.
+    Thus, type
+    ```bat
+    cd C:\Users\<your_username>\Downloads
+    ```
+    don't forget to change `<your_username>` and press *Enter* to execute.
+    3. **Install the certificate:** To install the certificate, type
+    ```bat
+    Certutil -addStore TrustedPeople WingChecker.cer
+    ```
+    and press *Enter* to execute
+
+        !!! success
+            In command prompt you should see a message verifying the certification was successfully installed.
+            ![Image title](../images/cmd_certification_success.png){ width=100%}
+
+
+### Installing VSTO Add-in
+
 1. **Download the WingChecker VSTO Excel Add-in:** Download the installer from [**here exe**](../files/setup.exe){:download="WingChecker.exe"}.
-1. **Download the WingChecker VSTO Excel Add-in:** Download the installer from [**here cer**](../files/MyKey.cer){:download="WingChecker.cer"}.
-3. **Run the Installer:** Double-click the downloaded `WingChecker.exe` file to start the installation process.
-4. **Follow the Installation Prompts:** Accept any warnings or prompts from your operating system and wait for the installation to complete.
+2. **Run the Installer:** Double-click the downloaded `WingChecker.exe` file to start the installation process.
+3. **Follow the Installation Prompts:** Accept any warnings or prompts from your operating system and wait for the installation to complete.
     
     ??? tip "Common Installation Prompts"
 
