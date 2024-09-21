@@ -7,7 +7,7 @@ Requirements:
 - Internet connection
 
 !!! warning 
-    Since this is not a native Windows application, you have to install a digital certificate **before** you install the add-in. Follow [certificate installation](#installing-digital-certificate) instructions below.
+    Since this is not a native Windows application, you have to install a digital certificate **before** you install the Add-in. Follow [certificate installation](#installing-digital-certificate) instructions below.
 
 ## Install
 
@@ -34,10 +34,20 @@ To install the WingChecker VSTO Excel Add-in follow these steps:
             In command prompt you should see a message verifying the certification was successfully installed.
             ![Image title](../images/cmd_certification_success.png){ width=100%}
 
+??? question "I am no longer using WingChecker, how do I delete the certitifacte?"
+    In case you stopped using WingChecker, you can remove the installed certification by executing:
+    ```bat
+    Certutil -delStore TrustedPeople certID
+    ```
+    The certID is the serial number of the certificate. Run this command to determine the certificate serial number:
+    ```bat
+    Certutil -store TrustedPeople
+    ```
+
 
 ### Installing VSTO Add-in
 
-1. **Download the WingChecker VSTO Excel Add-in:** Download the installer from [**here exe**](../files/setup.exe){:download="WingChecker.exe"}.
+1. **Download the WingChecker VSTO Excel Add-in:** Download the installer from [**here**](../files/setup.exe){:download="WingChecker.exe"}.
 2. **Run the Installer:** Double-click the downloaded `WingChecker.exe` file to start the installation process.
 3. **Follow the Installation Prompts:** Accept any warnings or prompts from your operating system and wait for the installation to complete.
     
