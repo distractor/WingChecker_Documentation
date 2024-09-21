@@ -758,7 +758,7 @@
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Since this is not a native Windows application, you have to install a digital certificate <strong>before</strong> you install the add-in. Follow <a href="#installing-digital-certificate">certificate installation</a> instructions below.</p>
+<p>Since this is not a native Windows application, you have to install a digital certificate <strong>before</strong> you install the Add-in. Follow <a href="#installing-digital-certificate">certificate installation</a> instructions below.</p>
 </div>
 <h2 id="install">Install</h2>
 <p>To install the WingChecker VSTO Excel Add-in follow these steps:</p>
@@ -786,9 +786,18 @@ and press <em>Enter</em> to execute</p>
 </ol>
 </li>
 </ol>
+<details class="question">
+<summary>I am no longer using WingChecker, how do I delete the certitifacte?</summary>
+<p>In case you stopped using WingChecker, you can remove the installed certification by executing:
+<div class="highlight"><pre><span></span><code>Certutil -delStore TrustedPeople certID
+</code></pre></div>
+The certID is the serial number of the certificate. Run this command to determine the certificate serial number:
+<div class="highlight"><pre><span></span><code>Certutil -store TrustedPeople
+</code></pre></div></p>
+</details>
 <h3 id="installing-vsto-add-in">Installing VSTO Add-in</h3>
 <ol>
-<li><strong>Download the WingChecker VSTO Excel Add-in:</strong> Download the installer from <a download="WingChecker.exe" href="../../files/setup.exe"><strong>here exe</strong></a>.</li>
+<li><strong>Download the WingChecker VSTO Excel Add-in:</strong> Download the installer from <a download="WingChecker.exe" href="../../files/setup.exe"><strong>here</strong></a>.</li>
 <li><strong>Run the Installer:</strong> Double-click the downloaded <code>WingChecker.exe</code> file to start the installation process.</li>
 <li>
 <p><strong>Follow the Installation Prompts:</strong> Accept any warnings or prompts from your operating system and wait for the installation to complete.</p>
