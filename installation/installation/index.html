@@ -366,15 +366,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Requirements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#install" class="md-nav__link">
     <span class="md-ellipsis">
       Install
@@ -383,6 +374,24 @@
   
     <nav class="md-nav" aria-label="Install">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-digital-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Digital Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-vsto-add-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing VSTO Add-in
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#verify-installation" class="md-nav__link">
@@ -666,15 +675,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Requirements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#install" class="md-nav__link">
     <span class="md-ellipsis">
       Install
@@ -683,6 +683,24 @@
   
     <nav class="md-nav" aria-label="Install">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-digital-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing Digital Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-vsto-add-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing VSTO Add-in
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#verify-installation" class="md-nav__link">
@@ -732,17 +750,45 @@
 
 
 <h1 id="installation">Installation</h1>
-<h2 id="requirements">Requirements</h2>
+<p>Requirements:</p>
 <ul>
 <li>Windows operating system</li>
 <li>Installed Microsoft Office Excel</li>
 <li>Internet connection</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Since this is not a native Windows application, you have to install a digital certificate <strong>before</strong> you install the add-in. Follow <a href="#installing-digital-certificate">certificate installation</a> instructions below.</p>
+</div>
 <h2 id="install">Install</h2>
 <p>To install the WingChecker VSTO Excel Add-in follow these steps:</p>
+<h3 id="installing-digital-certificate">Installing Digital Certificate</h3>
+<ol>
+<li><strong>Download the digital certificate:</strong> The certificate is delivered together with the WingChecker package. You can download the <code>WingChecker.cer</code> file from <a download="WingChecker.cer" href="../../files/MyKey.cer"><strong>here</strong></a>.</li>
+<li><strong>Install the certificate:</strong><ol>
+<li><strong>Run <em>Command Prompt</em> as administrator</strong>: <a href="https://support.kaspersky.com/common/windows/14637#block0">How to run the command prompt in Windows?</a></li>
+<li><strong>Navigate to the directory with <code>WingChecker.cer</code>:</strong> Normally, the default location for downloaded files is in the <em>Downloads</em> directory.
+Thus, type
+<div class="highlight"><pre><span></span><code><span class="k">cd</span> C:\Users\<span class="p">&lt;</span>your_username<span class="p">&gt;</span>\Downloads
+</code></pre></div>
+don't forget to change <code>&lt;your_username&gt;</code> and press <em>Enter</em> to execute.</li>
+<li>
+<p><strong>Install the certificate:</strong> To install the certificate, type
+<div class="highlight"><pre><span></span><code>Certutil -addStore TrustedPeople WingChecker.cer
+</code></pre></div>
+and press <em>Enter</em> to execute</p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>In command prompt you should see a message verifying the certification was successfully installed.
+<a class="glightbox" href="../../images/cmd_certification_success.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cmd_certification_success.png" width="100%" /></a></p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="installing-vsto-add-in">Installing VSTO Add-in</h3>
 <ol>
 <li><strong>Download the WingChecker VSTO Excel Add-in:</strong> Download the installer from <a download="WingChecker.exe" href="../../files/setup.exe"><strong>here exe</strong></a>.</li>
-<li><strong>Download the WingChecker VSTO Excel Add-in:</strong> Download the installer from <a download="WingChecker.cer" href="../../files/MyKey.cer"><strong>here cer</strong></a>.</li>
 <li><strong>Run the Installer:</strong> Double-click the downloaded <code>WingChecker.exe</code> file to start the installation process.</li>
 <li>
 <p><strong>Follow the Installation Prompts:</strong> Accept any warnings or prompts from your operating system and wait for the installation to complete.</p>
