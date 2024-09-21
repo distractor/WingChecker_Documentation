@@ -3,3 +3,5 @@
 *.manifest binary
 *.exe binary
 *.zip binary
+*.cer binary
+*.pfx binary
