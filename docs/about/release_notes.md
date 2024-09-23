@@ -1,5 +1,15 @@
 # Release notes
 
+## v1.0.1.27 [23.09.2024]
+
+### Added
+- Quick installer
+- Trim options validator on creation form
+
+### Fixed
+
+- Creation form position set to center.
+
 ## v1.0.1.22 [21.09.2024]
 
 ### Added
