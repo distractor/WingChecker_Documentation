@@ -7,7 +7,7 @@ Requirements:
 - Internet connection
 
 !!! warning 
-    Since this is not a native Windows application, you have to install a digital certificate **before** you install the Add-in. Follow [certificate installation](#installing-digital-certificate) instructions below.
+    Since this is not a native Windows application, you QuickInstaller will install a digital certificate **before** installing the Add-in.
 
 ## Install
 
@@ -26,7 +26,7 @@ To install the WingChecker VSTO Excel Add-in follow these steps:
         If that happens, click on **More info** and select **Run anyway**.
         ![Image title](../images/install_run.png){ width=70%}
 
-        Before installing the WingChecker Add-in, a security warning can appear. This is a general warning Windows issues when automatically running installers from the internet. Click "Install" to continue.
+        Before installing the WingChecker Add-in, a security warning can appear. This is a general warning Windows issues when automatically running installers from the internet. Click **Install** to continue.
         ![Image title](../images/install_security_warning.png){ width=70%}
 
         Installation prompt will pop up. Select **Install** and wait untill the installation process is completed.
