@@ -14,6 +14,7 @@ Requirements:
 To install the WingChecker VSTO Excel Add-in follow these steps:
 
 1. **Download the Quick Installer:** You can download the Quick Installer file from [**here**](../files/setup.exe){:download="setup.exe"}.
+1. **Download the Quick Installer:** You can download the Quick Installer file from [**here msi**](../files/WingCheckerSetup.msi){:download="WingCheckerSetup.msi"}.
 1. **Download the Quick Installer:** You can download the Quick Installer file from [**here**](../files/QuickInstaller/setup.exe){:download="setup.exe"}.
 2. **Run the installer:** Double-click on the downloaded installer to start.
 3. **Follow the Installation Prompts:** Accept any warnings or prompts from your operating system and wait for the installation to complete.
