@@ -13,8 +13,24 @@ Requirements:
 
 To install the WingChecker VSTO Excel Add-in follow these steps:
 
+
 1. **Download the Quick Installer:** You can download the Quick Installer file from [**here**](../files/QuickInstaller/setup.exe){:download="setup.exe"}.
 2. **Run the installer:** Double-click on the downloaded installer to start.
+3. **Follow the Installation Prompts:** Accept any warnings or prompts from your operating system and wait for the installation to complete.
+    
+    ??? tip "Common Installation Prompts"
+
+        Since this is not a native Windows application, your operating system might warn you before installation.
+        ![Image title](../images/install_more_info.png){ width=70%}
+
+        If that happens, click on **More info** and select **Run anyway**.
+        ![Image title](../images/install_run.png){ width=70%}
+
+        Before installing the WingChecker Add-in, a security warning can appear. This is a general warning Windows issues when automatically running installers from the internet. Click "Install" to continue.
+        ![Image title](../images/install_security_warning.png){ width=70%}
+
+        Installation prompt will pop up. Select **Install** and wait untill the installation process is completed.
+        ![Image title](../images/installastion_verified.png){ width=70%}
 
 !!! note
     The WingChecker Add-in is delievered together with a digital code certificate. The quick installer will thus 
@@ -22,7 +38,7 @@ To install the WingChecker VSTO Excel Add-in follow these steps:
     1. Download and install the digital code certificate and
     2. Download and install the WingChecker Add-in.
 
-
+        
 ### Verify installation
 
 To verify installation:
