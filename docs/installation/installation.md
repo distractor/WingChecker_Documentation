@@ -7,7 +7,7 @@ Requirements:
 - Internet connection
 
 !!! warning 
-    Since this is not a native Windows application, you have to install a digital certificate **before** you install the Add-in. Follow [certificate installation](#installing-digital-certificate) instructions below.
+    Since this is not a native Windows application, you QuickInstaller will install a digital certificate **before** installing the Add-in.
 
 ## Install
 
