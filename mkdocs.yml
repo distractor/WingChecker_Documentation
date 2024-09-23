@@ -16,6 +16,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+repo_url: https://github.com/distractor/WingChecker_Documentation
+
 extra:
   generator: false
 
