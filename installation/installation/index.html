@@ -400,6 +400,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#install-the-digital-code-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install the Digital Code Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-addin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install AddIn
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#verify-installation" class="md-nav__link">
     <span class="md-ellipsis">
       Verify installation
@@ -414,18 +432,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#updating" class="md-nav__link">
+  <a href="#update" class="md-nav__link">
     <span class="md-ellipsis">
-      Updating
+      Update
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#uninstallation" class="md-nav__link">
+  <a href="#uninstall" class="md-nav__link">
     <span class="md-ellipsis">
-      Uninstallation
+      Uninstall
     </span>
   </a>
   
@@ -691,6 +709,24 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#install-the-digital-code-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install the Digital Code Certificate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-addin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install AddIn
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#verify-installation" class="md-nav__link">
     <span class="md-ellipsis">
       Verify installation
@@ -705,18 +741,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#updating" class="md-nav__link">
+  <a href="#update" class="md-nav__link">
     <span class="md-ellipsis">
-      Updating
+      Update
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#uninstallation" class="md-nav__link">
+  <a href="#uninstall" class="md-nav__link">
     <span class="md-ellipsis">
-      Uninstallation
+      Uninstall
     </span>
   </a>
   
@@ -749,15 +785,51 @@
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Since this is not a native Windows application, you QuickInstaller will install a digital certificate <strong>before</strong> installing the Add-in.</p>
+<p>Since this is not a native Windows application, you must install a digital code certificate <strong>before</strong> installing the Add-in. See instructions <a href="#install">below</a>.</p>
 </div>
 <h2 id="install">Install</h2>
 <p>To install the WingChecker VSTO Excel Add-in follow these steps:</p>
 <ol>
-<li><strong>Download the Quick Installer:</strong> You can download the Quick Installer file from <a download="setup.exe" href="../../files/WingChecker/setup.exe"><strong>here exe</strong></a>.</li>
-<li><strong>Download the Quick Installer:</strong> You can download the Quick Installer file from <a download="setup.exe" href="../../files/setup.exe"><strong>here</strong></a>.</li>
-<li><strong>Download the Quick Installer:</strong> You can download the Quick Installer file from <a download="WingCheckerSetup.msi" href="../../files/WingCheckerSetup.msi"><strong>here msi</strong></a>.</li>
-<li><strong>Download the Quick Installer:</strong> You can download the Quick Installer file from <a download="setup.exe" href="../../files/QuickInstaller/setup.exe"><strong>here</strong></a>.</li>
+<li>
+<p><strong>Download the Installer:</strong> You can download the installer file from <a download="WingChecker.exe" href="../../files/WingChecker/setup.exe"><strong>here</strong></a>.</p>
+<p><a class="md-button md-button--primary" download="WingChecker.exe" href="../../files/WingChecker/setup.exe">Download installer</a></p>
+</li>
+</ol>
+<h3 id="install-the-digital-code-certificate">Install the Digital Code Certificate</h3>
+<ol>
+<li>Right-click on the downloaded <em>WingChecker.exe</em> and select <strong>Properties</strong>. </li>
+<li>In the top menu, select <strong>Digital Signatures</strong>. </li>
+<li>
+<p>From the Signature list, select the digital signature named <code>LEGION\mitja</code> and click on <strong>Details</strong>.</p>
+<p><a class="glightbox" href="../../images/installer_digital_signature.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/installer_digital_signature.png" width="50%" /></a></p>
+</li>
+<li>
+<p>A new window opens. Click on <strong>View Certififcate</strong>.</p>
+<p><a class="glightbox" href="../../images/installer_view_certificate.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/installer_view_certificate.png" width="50%" /></a></p>
+</li>
+<li>
+<p>In a new window select <strong>Install Certificate</strong>.</p>
+<p><a class="glightbox" href="../../images/installer_install_certificate.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/installer_install_certificate.png" width="50%" /></a></p>
+</li>
+<li>
+<p>Certificate installation wizzard opens. Select <strong>Current User</strong> and click <strong>Next</strong>.</p>
+<p><a class="glightbox" href="../../images/certificate_wizzard_1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/certificate_wizzard_1.png" width="50%" /></a></p>
+</li>
+<li>
+<p><strong>Warning!</strong> This step is very important for successful installation. </p>
+<p>Select <strong>Place all certififcates in the following store</strong>, then click <strong>Browse</strong> and look for <strong>Trusted People</strong>. Select <strong>OK</strong> and click <strong>Next</strong>.</p>
+<p><a class="glightbox" href="../../images/certififcate_trusted_people.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/certififcate_trusted_people.png" width="50%" /></a></p>
+</li>
+<li>
+<p>Select <strong>Finish</strong> and wait for success message.</p>
+<p><a class="glightbox" href="../../images/certificate_finish.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/certificate_finish.png" width="50%" /></a></p>
+</li>
+<li>
+<p>Close all windows oppened in the proccess.</p>
+</li>
+</ol>
+<h3 id="install-addin">Install AddIn</h3>
+<ol>
 <li><strong>Run the installer:</strong> Double-click on the downloaded installer to start.</li>
 <li>
 <p><strong>Follow the Installation Prompts:</strong> Accept any warnings or prompts from your operating system and wait for the installation to complete.</p>
@@ -767,21 +839,11 @@
 <a class="glightbox" href="../../images/install_more_info.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/install_more_info.png" width="70%" /></a></p>
 <p>If that happens, click on <strong>More info</strong> and select <strong>Run anyway</strong>.
 <a class="glightbox" href="../../images/install_run.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/install_run.png" width="70%" /></a></p>
-<p>Before installing the WingChecker Add-in, a security warning can appear. This is a general warning Windows issues when automatically running installers from the internet. Click <strong>Install</strong> to continue.
-<a class="glightbox" href="../../images/install_security_warning.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/install_security_warning.png" width="70%" /></a></p>
 <p>Installation prompt will pop up. Select <strong>Install</strong> and wait untill the installation process is completed.
 <a class="glightbox" href="../../images/installastion_verified.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/installastion_verified.png" width="70%" /></a></p>
 </details>
 </li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The WingChecker Add-in is delievered together with a digital code certificate. The quick installer will thus </p>
-<ol>
-<li>Download and install the digital code certificate and</li>
-<li>Download and install the WingChecker Add-in.</li>
-</ol>
-</div>
 <h3 id="verify-installation">Verify installation</h3>
 <p>To verify installation:</p>
 <ol>
@@ -789,9 +851,9 @@
 </ol>
 <p>If the installation was successful, the WingChecker Add-in will be visible in the <strong>Add-ins</strong> tab of the Excel ribbon.</p>
 <p><a class="glightbox" href="../../images/verify_installation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/verify_installation.png" width="70%" /></a></p>
-<h2 id="updating">Updating</h2>
+<h2 id="update">Update</h2>
 <p>Excel checks for an update every time you launch a new instance. If a new version of <strong>WingChecker</strong> is available, it will automatically install it.</p>
-<h2 id="uninstallation">Uninstallation</h2>
+<h2 id="uninstall">Uninstall</h2>
 <p>To uninstall the WingChecker VSTO Excel Add-in, follow these steps:</p>
 <ol>
 <li><strong>Access the Control Panel:</strong> Open the Control Panel on your Windows system.</li>
@@ -800,7 +862,7 @@
 </ol>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>If you encounter any issues during the installation or uninstallation process, please refer to our troubleshooting guide or contact our <a href="../../support/support/">support team</a>.</p>
+<p>If you encounter any issues during the installation or uninstallation process, please refer to our <a href="../../support/support/">support team</a>.</p>
 </div>
 
 
