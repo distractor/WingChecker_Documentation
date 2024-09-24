@@ -6,6 +6,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - search.highlight
+    - content.tabs.link
 
 copyright: Copyright &copy; 2024 Mitja Jančič
 
@@ -17,6 +18,13 @@ markdown_extensions:
   - md_in_html
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 repo_url: https://github.com/distractor/WingChecker_Documentation
 
