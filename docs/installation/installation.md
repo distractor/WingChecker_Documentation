@@ -116,7 +116,7 @@ To uninstall the WingChecker VSTO Excel Add-in, follow these steps:
 2. **Locate Add or Remove Programs:** Find and click on the "Add or Remove Programs" option.
 3. **Uninstall WingChecker:** Locate "WingChecker" in the list of installed programs and click the "Uninstall" button.
 4. **Delete the Digital Code Certififcate (Optional):**
-    1. Initialize a new instance of Command Prompt.
+    1. Initialize a new instance of Command Prompt with Administrator privileges.
     2. Copy paste the following line to your Command Prompt.
         ```bat
         Certutil -store TrustedPeople
