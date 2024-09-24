@@ -7,7 +7,10 @@ Requirements:
 - Internet connection
 
 !!! warning 
-    Since this is not a native Windows application, you must install a digital code certificate **before** installing the Add-in. See instructions [below](#install).
+    Since this is not a native Windows application, a digital code certificate must be installed **before** installing the Add-in. For clarity, see installation guide for
+
+    - [**Quick Install**](#__tabbed_1_1) or 
+    - [**Manual Installation**](#__tabbed_1_2).
 
 ## Install
 
@@ -42,7 +45,7 @@ Requirements:
 
             [Download installer](../files/WingChecker/setup.exe){:download="WingChecker.exe" .md-button .md-button--primary }
 
-        ### Install the Digital Code Certificate
+        **Install the Digital Code Certificate**
 
         1. Right-click on the downloaded *WingChecker.exe* and select **Properties**. 
         2. In the top menu, select **Digital Signatures**. 
@@ -74,7 +77,7 @@ Requirements:
 
         9. Close all windows oppened in the proccess.
 
-        ### Install AddIn
+        **Install AddIn**
 
         1. **Run the installer:** Double-click on the downloaded installer to start.
         2. **Follow the Installation Prompts:** Accept any warnings or prompts from your operating system and wait for the installation to complete.
@@ -110,8 +113,39 @@ Excel checks for an update every time you launch a new instance. If a new versio
 To uninstall the WingChecker VSTO Excel Add-in, follow these steps:
 
 1. **Access the Control Panel:** Open the Control Panel on your Windows system.
-2. **Locate Add/Remove Programs:** Find and click on the "Add or Remove Programs" option.
+2. **Locate Add or Remove Programs:** Find and click on the "Add or Remove Programs" option.
 3. **Uninstall WingChecker:** Locate "WingChecker" in the list of installed programs and click the "Uninstall" button.
-
+4. **Delete the Digital Code Certififcate (Optional):**
+    1. Initialize a new instance of Command Prompt.
+    2. Copy paste the following line to your Command Prompt.
+        ```bat
+        Certutil -store TrustedPeople
+        ```
+    3. In the output, which should look something similar to this
+        ```bat hl_lines="4 5"
+        C:\Users\mitja>Certutil -store TrustedPeople
+        TrustedPeople "Trusted People"
+        ================ Certificate 0 ================
+        Serial Number: fde7036eca21f0a44c22e67119e3fc58
+        Issuer: CN=LEGION\mitja
+        NotBefore: 21/09/2024 08:52
+        NotAfter: 12/12/2050 00:00
+        Subject: CN=LEGION\mitja
+        Signature matches Public Key
+        Root Certificate: Subject matches Issuer
+        Cert Hash(sha1): 47d27c80b9642882318f41fca5a8fda2c24675ac
+        No key provider information
+        Provider = Microsoft Strong Cryptographic Provider
+        Simple container name: PvkTmp:4ad6844b-2e1e-4ecb-9b04-b42e81d7ded2
+        Unique container name: ca46e0b8fd93edc96f075e19a2a1c9f9_68a74995-8b4e-4347-8ef8-7339d1e1b982
+        ERROR: missing key association property: CERT_KEY_IDENTIFIER_PROP_ID
+        Signature test passed
+        CertUtil: -store command completed successfully.
+        ```
+        find certififcate with `Issuer: LEGION\mitja` and copy the `Serial Number` from the line above.
+    4. Replace the `certID` with the serial number and execute the following line in your command prompt.
+        ```bat
+        Certutil -delStore TrustedPeople certID
+        ```
 !!! info
     If you encounter any issues during the installation or uninstallation process, please refer to our [support team](../support/support.md).
