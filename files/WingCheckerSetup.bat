@@ -1,3 +1,4 @@
+@echo off
 REM Author: Mitja Jancic.
 REM This is a helper script to install the WingChecker AddIn.
 REM See Documentation page: https://distractor.github.io/WingChecker_Documentation/
@@ -7,7 +8,6 @@ REM 2. Install WingChecker AddIn.
 REM 
 REM Enjoy!
 
-@echo off
 echo Greetings from WingChecker setup script
 goto check_Permissions
 
