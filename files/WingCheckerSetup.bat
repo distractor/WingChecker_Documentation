@@ -8,7 +8,7 @@ REM 2. Install WingChecker AddIn.
 REM 
 REM Enjoy!
 
-echo Greetings from WingChecker setup script
+echo Greetings from WingChecker setup script!
 goto check_Permissions
 
 :check_Permissions
@@ -36,6 +36,6 @@ curl.exe -o WingChecker.exe https://distractor.github.io/WingChecker_Documentati
 echo downloaded
 echo Installing WingChecker AddIn...
 WingChecker.exe
-echo WingChecker installed. 
-echo Enjoy!
+echo WingChecker installer started. Follow the instructions there. 
+echo After successful installation, you can close this window.
 pause
