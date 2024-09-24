@@ -400,24 +400,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-the-digital-code-certificate" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install the Digital Code Certificate
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-addin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install AddIn
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#verify-installation" class="md-nav__link">
     <span class="md-ellipsis">
       Verify installation
@@ -709,24 +691,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-the-digital-code-certificate" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install the Digital Code Certificate
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-addin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install AddIn
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#verify-installation" class="md-nav__link">
     <span class="md-ellipsis">
       Verify installation
@@ -785,7 +749,11 @@
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Since this is not a native Windows application, you must install a digital code certificate <strong>before</strong> installing the Add-in. See instructions <a href="#install">below</a>.</p>
+<p>Since this is not a native Windows application, a digital code certificate must be installed <strong>before</strong> installing the Add-in. For clarity, see installation guide for</p>
+<ul>
+<li><a href="#__tabbed_1_1"><strong>Quick Install</strong></a> or </li>
+<li><a href="#__tabbed_1_2"><strong>Manual Installation</strong></a>.</li>
+</ul>
 </div>
 <h2 id="install">Install</h2>
 <div class="admonition quote">
@@ -818,7 +786,7 @@
 <p><a class="md-button md-button--primary" download="WingChecker.exe" href="../../files/WingChecker/setup.exe">Download installer</a></p>
 </li>
 </ol>
-<h3 id="install-the-digital-code-certificate">Install the Digital Code Certificate</h3>
+<p><strong>Install the Digital Code Certificate</strong></p>
 <ol>
 <li>Right-click on the downloaded <em>WingChecker.exe</em> and select <strong>Properties</strong>. </li>
 <li>In the top menu, select <strong>Digital Signatures</strong>. </li>
@@ -851,7 +819,7 @@
 <p>Close all windows oppened in the proccess.</p>
 </li>
 </ol>
-<h3 id="install-addin">Install AddIn</h3>
+<p><strong>Install AddIn</strong></p>
 <ol>
 <li><strong>Run the installer:</strong> Double-click on the downloaded installer to start.</li>
 <li>
@@ -884,8 +852,39 @@
 <p>To uninstall the WingChecker VSTO Excel Add-in, follow these steps:</p>
 <ol>
 <li><strong>Access the Control Panel:</strong> Open the Control Panel on your Windows system.</li>
-<li><strong>Locate Add/Remove Programs:</strong> Find and click on the "Add or Remove Programs" option.</li>
+<li><strong>Locate Add or Remove Programs:</strong> Find and click on the "Add or Remove Programs" option.</li>
 <li><strong>Uninstall WingChecker:</strong> Locate "WingChecker" in the list of installed programs and click the "Uninstall" button.</li>
+<li><strong>Delete the Digital Code Certififcate (Optional):</strong><ol>
+<li>Initialize a new instance of Command Prompt.</li>
+<li>Copy paste the following line to your Command Prompt.
+    <div class="language-bat highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Certutil -store TrustedPeople
+</span></code></pre></div></li>
+<li>In the output, which should look something similar to this
+    <div class="language-bat highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>C<span class="p">:</span><span class="nl">\Users\mitja</span><span class="c1">&gt;Certutil -store TrustedPeople</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>TrustedPeople <span class="s2">&quot;Trusted People&quot;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>================ Certificate 0 ================
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="hll">Serial Number: fde7036eca21f0a44c22e67119e3fc58
+</span></span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="hll">Issuer: CN=LEGION\mitja
+</span></span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>NotBefore: 21/09/2024 08:52
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>NotAfter: 12/12/2050 00:00
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>Subject: CN=LEGION\mitja
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>Signature matches Public Key
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>Root Certificate: Subject matches Issuer
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>Cert Hash(sha1): 47d27c80b9642882318f41fca5a8fda2c24675ac
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>No key provider information
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>Provider = Microsoft Strong Cryptographic Provider
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>Simple container name: PvkTmp:4ad6844b-2e1e-4ecb-9b04-b42e81d7ded2
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>Unique container name: ca46e0b8fd93edc96f075e19a2a1c9f9_68a74995-8b4e-4347-8ef8-7339d1e1b982
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>ERROR: missing key association property: CERT_KEY_IDENTIFIER_PROP_ID
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>Signature test passed
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>CertUtil: -store command completed successfully.
+</span></code></pre></div>
+    find certififcate with <code>Issuer: LEGION\mitja</code> and copy the <code>Serial Number</code> from the line above.</li>
+<li>Replace the <code>certID</code> with the serial number and execute the following line in your command prompt.
+    <div class="language-bat highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Certutil -delStore TrustedPeople certID
+</span></code></pre></div></li>
+</ol>
+</li>
 </ol>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -908,6 +907,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -936,7 +937,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "search.highlight"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
