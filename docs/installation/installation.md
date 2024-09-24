@@ -7,16 +7,52 @@ Requirements:
 - Internet connection
 
 !!! warning 
-    Since this is not a native Windows application, you QuickInstaller will install a digital certificate **before** installing the Add-in.
+    Since this is not a native Windows application, you must install a digital code certificate **before** installing the Add-in. See instructions [below](#install).
 
 ## Install
 
 To install the WingChecker VSTO Excel Add-in follow these steps:
 
+1. **Download the Installer:** You can download the installer file from [**here**](../files/WingChecker/setup.exe){:download="WingChecker.exe"}.
 
-1. **Download the Quick Installer:** You can download the Quick Installer file from [**here**](../files/QuickInstaller/setup.exe){:download="setup.exe"}.
-2. **Run the installer:** Double-click on the downloaded installer to start.
-3. **Follow the Installation Prompts:** Accept any warnings or prompts from your operating system and wait for the installation to complete.
+    [Download installer](../files/WingChecker/setup.exe){:download="WingChecker.exe" .md-button .md-button--primary }
+
+### Install the Digital Code Certificate
+
+1. Right-click on the downloaded *WingChecker.exe* and select **Properties**. 
+2. In the top menu, select **Digital Signatures**. 
+3. From the Signature list, select the digital signature named `LEGION\mitja` and click on **Details**.
+
+    ![Image title](../images/installer_digital_signature.png){ width=50%}
+
+4. A new window opens. Click on **View Certififcate**.
+
+    ![Image title](../images/installer_view_certificate.png){ width=50%}
+
+5. In a new window select **Install Certificate**.
+
+    ![Image title](../images/installer_install_certificate.png){ width=50%}
+
+6. Certificate installation wizzard opens. Select **Current User** and click **Next**.
+
+    ![Image title](../images/certificate_wizzard_1.png){ width=50%}
+
+7. **Warning!** This step is very important for successful installation. 
+    
+    Select **Place all certififcates in the following store**, then click **Browse** and look for **Trusted People**. Select **OK** and click **Next**.
+
+    ![Image title](../images/certififcate_trusted_people.png){ width=50%}
+
+8. Select **Finish** and wait for success message.
+
+    ![Image title](../images/certificate_finish.png){ width=50%}
+
+9. Close all windows oppened in the proccess.
+
+### Install AddIn
+
+1. **Run the installer:** Double-click on the downloaded installer to start.
+2. **Follow the Installation Prompts:** Accept any warnings or prompts from your operating system and wait for the installation to complete.
     
     ??? tip "Common Installation Prompts"
 
@@ -26,17 +62,8 @@ To install the WingChecker VSTO Excel Add-in follow these steps:
         If that happens, click on **More info** and select **Run anyway**.
         ![Image title](../images/install_run.png){ width=70%}
 
-        Before installing the WingChecker Add-in, a security warning can appear. This is a general warning Windows issues when automatically running installers from the internet. Click **Install** to continue.
-        ![Image title](../images/install_security_warning.png){ width=70%}
-
         Installation prompt will pop up. Select **Install** and wait untill the installation process is completed.
         ![Image title](../images/installastion_verified.png){ width=70%}
-
-!!! note
-    The WingChecker Add-in is delievered together with a digital code certificate. The quick installer will thus 
-    
-    1. Download and install the digital code certificate and
-    2. Download and install the WingChecker Add-in.
 
         
 ### Verify installation
@@ -49,11 +76,11 @@ If the installation was successful, the WingChecker Add-in will be visible in th
 
 ![Image title](../images/verify_installation.png){ width=70%}
 
-## Updating
+## Update
 
 Excel checks for an update every time you launch a new instance. If a new version of **WingChecker** is available, it will automatically install it.
 
-## Uninstallation
+## Uninstall
 
 To uninstall the WingChecker VSTO Excel Add-in, follow these steps:
 
@@ -62,4 +89,4 @@ To uninstall the WingChecker VSTO Excel Add-in, follow these steps:
 3. **Uninstall WingChecker:** Locate "WingChecker" in the list of installed programs and click the "Uninstall" button.
 
 !!! info
-    If you encounter any issues during the installation or uninstallation process, please refer to our troubleshooting guide or contact our [support team](../support/support.md).
+    If you encounter any issues during the installation or uninstallation process, please refer to our [support team](../support/support.md).
