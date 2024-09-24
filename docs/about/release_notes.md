@@ -1,5 +1,14 @@
 # Release notes
 
+## TO BE RELEASED
+
+### Added
+- Publisher name to installer.
+
+### Fixed
+
+- Minor changes to quick install script. Removed link start.
+
 ## v1.0.1.30 [24.09.2024]
 
 ### Added

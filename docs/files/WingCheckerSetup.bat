@@ -1,4 +1,14 @@
+REM Author: Mitja Jancic.
+REM This is a helper script to install the WingChecker AddIn.
+REM See Documentation page: https://distractor.github.io/WingChecker_Documentation/
+REM Script will:
+REM 1. Install digital code certificate
+REM 2. Install WingChecker AddIn.
+REM 
+REM Enjoy!
+
 @echo off
+echo Greetings from WingChecker setup script
 goto check_Permissions
 
 :check_Permissions
@@ -15,7 +25,6 @@ goto check_Permissions
     pause >nul
 
 :run_script
-echo Greetings from WingChecker setup script
 title WingChecker setup script
 echo Downloading certificate...
 curl.exe -o WingChecker.cer https://distractor.github.io/WingChecker_Documentation/files/MyKey.cer
@@ -28,5 +37,5 @@ echo downloaded
 echo Installing WingChecker AddIn...
 WingChecker.exe
 echo WingChecker installed. 
-start https://distractor.github.io/WingChecker_Documentation/
+echo Enjoy!
 pause
