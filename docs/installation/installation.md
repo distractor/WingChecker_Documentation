@@ -29,12 +29,15 @@ Requirements:
         ??? tip "Common Installation Prompts"
 
             Since this is not a native Windows application, your operating system might warn you before running the installation script.
+
             ![Image title](../images/install_more_info.png){ width=70%}
 
             If that happens, click on **More info** and select **Run anyway**.
+
             ![Image title](../images/install_run.png){ width=70%}
 
             Installation prompt will pop up. Select **Install** and wait untill the installation process is completed.
+
             ![Image title](../images/installastion_verified.png){ width=70%}
 
     === "Manual Installation"
