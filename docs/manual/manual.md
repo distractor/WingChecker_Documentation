@@ -30,10 +30,10 @@ This section guides you through the process of evaluating a wing using WingCheck
 
 ### Measuring and Evaluating the Wing
 
-Once you have input all measured line lengths in the *Measuring* sheet, click the **Evaluation** button on the ribbon to begin the evaluation process.
+Once you have input all the measured line lengths in the *Measuring* sheet, click the **Evaluation** button on the ribbon to begin the evaluation process.
 
 !!! warning "Missing line lengths"
-    WingChecker will verify that all lines have been measured. If any measurements are missing, a warning will be displayed, and the evaluation will not proceed.
+    WingChecker will verify that all lines have been measured. If any measurements are missing, a warning will be displayed, and the evaluation will not proceed until the data is complete.
 
 ### The *Evaluation* Sheet
 
@@ -54,6 +54,18 @@ To enhance clarity, WingChecker employs conditional formatting within the *Evalu
 !!! note "Reminder"
     Ensure all cyan-colored cells are filled in correctly.
 
+## Tolerances
+
+The designers have provided some default values for the allowed tolerances. These can be changed, but only by an amount allowed and defined by the designers. If you change a specific tolerance too much, a warning is rasied and the value is returned to the default.
+
+!!! note "Tolerance list"
+    - **Main lines:** Maximum allowed deviation of main lines.
+    - **Total length:** Maximum allowed average absolute deviation of all lines.
+    - **Steering lines:** Maximum allowed deviation of brake lines.
+    - **Symmetry:** Maximum allowed deviation from same line on the other side of the wing. Brakes excluded.
+    - **Pitch main line:** Pitch main lines.
+    - **Pitch canopy:** Pitch canopy.
+
 ## Trimming Setup
 
 To configure trimming, click the **Trim Settings** button on the ribbon.
@@ -72,6 +84,10 @@ Each row in the table corresponds to a main line, and each column represents an 
     - **AS:** cow hitch.
     - **DL (default for new wings):** double loop.
     - **SL:** single loop
+
+    By pressing the **Help** button, you will also get the visuals.
+
+    ![Image title](../images/trimming_help.png){ width=30%}
 
 !!! warning
     Each main line should have only one "x" in its corresponding row, indicating the selected trimming option. An example of valid input is shown in the form image above.

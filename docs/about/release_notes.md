@@ -5,12 +5,15 @@
 ### Added
 - Publisher name to installer.
 - Tolerances to creation box.
+- Help button to current trim options.
 
 ### Fixed
 
 - Minor changes to quick install script. Removed link start.
 - Re-evaluation of already filled Evaluation sheet.
 - Creation box pop-up name.
+- Disabled maximize/minize windows.
+- Split creation into two separated forms.
 
 ## v1.0.1.30 [24.09.2024]
 
