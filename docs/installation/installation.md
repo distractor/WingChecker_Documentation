@@ -26,19 +26,13 @@ Requirements:
         - Download and install the digital code certififcate and
         - Download and install the WingChecker AddIn.
 
-        ??? tip "Common Installation Prompts"
+        !!! tip "Common Installation Prompts"
 
             Since this is not a native Windows application, your operating system might warn you before running the installation script.
 
             ![Image title](../images/install_more_info.png){ width=70%}
 
             If that happens, click on **More info** and select **Run anyway**.
-
-            ![Image title](../images/install_run.png){ width=70%}
-
-            Installation prompt will pop up. Select **Install** and wait untill the installation process is completed.
-
-            ![Image title](../images/installastion_verified.png){ width=70%}
 
     === "Manual Installation"
 
@@ -85,16 +79,12 @@ Requirements:
         1. **Run the installer:** Double-click on the downloaded installer to start.
         2. **Follow the Installation Prompts:** Accept any warnings or prompts from your operating system and wait for the installation to complete.
             
-            ??? tip "Common Installation Prompts"
+            !!! tip "Common Installation Prompts"
 
                 Since this is not a native Windows application, your operating system might warn you before installation.
                 ![Image title](../images/install_more_info.png){ width=70%}
 
                 If that happens, click on **More info** and select **Run anyway**.
-                ![Image title](../images/install_run.png){ width=70%}
-
-                Installation prompt will pop up. Select **Install** and wait untill the installation process is completed.
-                ![Image title](../images/installastion_verified.png){ width=70%}
 
         
 ### Verify installation
