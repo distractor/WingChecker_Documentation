@@ -1,12 +1,11 @@
 # Documentation
 
-WingChecker is a VSTO Excel Add-in written in C#.
+!!! abstract "What is this?"
+    WingChecker is a VSTO Excel Add-in written in C#.
 
-The add-in is designed to check the line lengths on paragliders, providing valuable insights for quality control and safety check.
+    The add-in is designed to check the line lengths on paragliders, providing valuable insights for quality control and safety check.
 
 ## Overview
-
-Check out the following contents:
 
 - [Installation](installation/installation.md)
 - [Manual for production](manual/manual_production.md)
