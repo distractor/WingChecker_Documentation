@@ -15,7 +15,8 @@
     :material-pencil: Re-evaluation of already filled Evaluation sheet.<br>
     :material-pencil: Creation box pop-up name.<br>
     :material-pencil: Disabled maximize/minize windows.<br>
-    :material-pencil: Split creation into two separated forms.
+    :material-pencil: Split creation into two separated forms.<br>
+    :material-pencil: Fixed tolerance input validation.
 
 ### v1.0.1.30 <small><small>24.09.2024</small></small>
 
