@@ -564,6 +564,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#tolerances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tolerances
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#trimming-setup" class="md-nav__link">
     <span class="md-ellipsis">
       Trimming Setup
@@ -866,6 +875,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#tolerances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tolerances
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#trimming-setup" class="md-nav__link">
     <span class="md-ellipsis">
       Trimming Setup
@@ -943,10 +961,10 @@
 <h2 id="evaluation-process">Evaluation Process</h2>
 <p>This section guides you through the process of evaluating a wing using WingChecker.</p>
 <h3 id="measuring-and-evaluating-the-wing">Measuring and Evaluating the Wing</h3>
-<p>Once you have input all measured line lengths in the <em>Measuring</em> sheet, click the <strong>Evaluation</strong> button on the ribbon to begin the evaluation process.</p>
+<p>Once you have input all the measured line lengths in the <em>Measuring</em> sheet, click the <strong>Evaluation</strong> button on the ribbon to begin the evaluation process.</p>
 <div class="admonition warning">
 <p class="admonition-title">Missing line lengths</p>
-<p>WingChecker will verify that all lines have been measured. If any measurements are missing, a warning will be displayed, and the evaluation will not proceed.</p>
+<p>WingChecker will verify that all lines have been measured. If any measurements are missing, a warning will be displayed, and the evaluation will not proceed until the data is complete.</p>
 </div>
 <h3 id="the-evaluation-sheet">The <em>Evaluation</em> Sheet</h3>
 <p>Upon successful evaluation, the <em>Evaluation</em> sheet will display the results. It should resemble the following example:<br />
@@ -964,6 +982,19 @@
 <p class="admonition-title">Reminder</p>
 <p>Ensure all cyan-colored cells are filled in correctly.</p>
 </div>
+<h2 id="tolerances">Tolerances</h2>
+<p>The designers have provided some default values for the allowed tolerances. These can be changed, but only by an amount allowed and defined by the designers. If you change a specific tolerance too much, a warning is rasied and the value is returned to the default.</p>
+<div class="admonition note">
+<p class="admonition-title">Tolerance list</p>
+<ul>
+<li><strong>Main lines:</strong> Maximum allowed deviation of main lines.</li>
+<li><strong>Total length:</strong> Maximum allowed average absolute deviation of all lines.</li>
+<li><strong>Steering lines:</strong> Maximum allowed deviation of brake lines.</li>
+<li><strong>Symmetry:</strong> Maximum allowed deviation from same line on the other side of the wing. Brakes excluded.</li>
+<li><strong>Pitch main line:</strong> Pitch main lines.</li>
+<li><strong>Pitch canopy:</strong> Pitch canopy.</li>
+</ul>
+</div>
 <h2 id="trimming-setup">Trimming Setup</h2>
 <p>To configure trimming, click the <strong>Trim Settings</strong> button on the ribbon.</p>
 <h3 id="generating-trimming-options">Generating Trimming Options</h3>
@@ -978,6 +1009,8 @@
 <li><strong>DL (default for new wings):</strong> double loop.</li>
 <li><strong>SL:</strong> single loop</li>
 </ul>
+<p>By pressing the <strong>Help</strong> button, you will also get the visuals.</p>
+<p><a class="glightbox" href="../../images/trimming_help.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/trimming_help.png" width="30%" /></a></p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
