@@ -2,6 +2,9 @@
 
 ## Release notes
 
+:material-plus-circle: - Added feature.<br>
+:material-pencil: - Fixed feature.
+
 ### Waiting for release <small><small>TBD</small></small>
 
 !!! quote "Release notes"
