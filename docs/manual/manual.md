@@ -76,7 +76,7 @@ Clicking **Trim Settings** opens a form where you can select the initial trim se
 
 Each row in the table corresponds to a main line, and each column represents an available trimming option.
 
-![Image title](../images/current_trim_form.png){ width=70%}
+![Image title](../images/current_trim_form.png){ width=60%}
 
 
 !!! note "Trimming options"
@@ -87,7 +87,7 @@ Each row in the table corresponds to a main line, and each column represents an 
 
     By pressing the **Help** button, you will also get the visuals.
 
-    ![Image title](../images/trimming_help.png){ width=30%}
+    ![Image title](../images/trimming_help.png){ width=20%}
 
 !!! warning
     Each main line should have only one "x" in its corresponding row, indicating the selected trimming option. An example of valid input is shown in the form image above.
@@ -98,7 +98,7 @@ Once the form is completed, click **Generate Trimming Options** to apply the sel
 ### Using the Trimmers
 
 To apply trimmers, select the desired trim option from the dropdown menu.  
-![Using Trimmers](../images/trimmers_using.png){ width=80% }
+![Using Trimmers](../images/trimmers_using.png){ width=70% }
 
 After selection, WingChecker will automatically adjust all lines attached to the selected main line according to the chosen trim option.
 
