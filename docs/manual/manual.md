@@ -89,6 +89,7 @@ Each row in the table corresponds to a main line, and each column represents an 
 
     ![Image title](../images/trimming_help.png){ width=20%}
 
+
 !!! warning
     Each main line should have only one "x" in its corresponding row, indicating the selected trimming option. An example of valid input is shown in the form image above.
 
