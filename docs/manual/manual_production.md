@@ -30,6 +30,7 @@ To prepare a new check workbook:
         - **SL:** Single loop
 
 8. **Tolerances:** Click **Next** to show the tolerance table.
+
     ![Form with Tolerance Data](../images/create_workbook_tolerances.png){ width=60% }
 
     The table displayed defines the allowed tolerances (first column) and maximum allowed tolerance change by the checker.
