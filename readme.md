@@ -21,3 +21,7 @@ This pushes new commit to `gh-pages` branch, which is used to serve the document
 > **Note: **
 >
 > This creates new page depending on your current branch. Make sure to checkout to master and pull latest.
+
+## Before deploy
+
+Please run tests before deployment. 
