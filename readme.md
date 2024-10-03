@@ -2,11 +2,11 @@
 
 ## Structure
 
-The `files` directory has two main folders:
-- `WingChecker` with plugin
-- `QuickInstaller`.
+The `files` directory has one main subfolder:
+- `WingChecker` with plugin files
+- The rest of the files are in `files`
 
-Both must be publish in `Release` via VS.
+> Be sure to build release in VS before publishing.
 
 ## Deploy
 
@@ -20,4 +20,4 @@ This pushes new commit to `gh-pages` branch, which is used to serve the document
 
 > **Note: **
 >
-> This creates new page depending on your current branch. Make sure to checkout to master.
+> This creates new page depending on your current branch. Make sure to checkout to master and pull latest.

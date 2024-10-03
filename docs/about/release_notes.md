@@ -11,6 +11,7 @@
     :material-plus-circle: Publisher name to installer.<br>
     :material-plus-circle: Tolerances to creation box.<br>
     :material-plus-circle: Help button to current trim options.<br>
+    :material-plus-circle: Automated tests.<br>
     :material-pencil: Minor changes to quick install script. Removed link start.<br>
     :material-pencil: Re-evaluation of already filled Evaluation sheet.<br>
     :material-pencil: Creation box pop-up name.<br>
