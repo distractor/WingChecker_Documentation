@@ -10,7 +10,7 @@ Many thanks to the authors and contributors of those wonderful projects.
 
 ## WingChecker License
 
-Copyright © 2024, [Mitja Jančič](https://distractor.github.io/). All rights reserved.
+Copyright © 2024, [Mitja Jančič](https://distractor.github.io/PersonalPage/). All rights reserved.
 
 !!! note "Redistribution"
     Redistribution and use in source and binary forms, with or without modification,

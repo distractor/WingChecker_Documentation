@@ -37,9 +37,6 @@ markdown_extensions:
 
 repo_url: https://github.com/distractor/WingChecker_Documentation
 
-extra:
-  generator: false
-
 plugins:
   - glightbox
   - search
