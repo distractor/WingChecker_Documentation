@@ -11,7 +11,7 @@
     :material-plus-circle: TODO<br>
     :material-pencil: TODO
 
-### v1.0.1.38 <small><small>24.10.2024</small></small>
+### v1.0.1.39 <small><small>24.10.2024</small></small>
 
 !!! quote "Release notes"
     :material-plus-circle: Publisher name to installer.<br>
