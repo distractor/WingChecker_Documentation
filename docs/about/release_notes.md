@@ -8,6 +8,12 @@
 ### Waiting for release <small><small>TBD</small></small>
 
 !!! quote "Release notes"
+    :material-plus-circle: TODO<br>
+    :material-pencil: TODO
+
+### v1.0.1.38 <small><small>24.10.2024</small></small>
+
+!!! quote "Release notes"
     :material-plus-circle: Publisher name to installer.<br>
     :material-plus-circle: Tolerances to creation box.<br>
     :material-plus-circle: Help button to current trim options.<br>
@@ -17,7 +23,17 @@
     :material-pencil: Creation box pop-up name.<br>
     :material-pencil: Disabled maximize/minize windows.<br>
     :material-pencil: Split creation into two separated forms.<br>
-    :material-pencil: Fixed tolerance input validation.
+    :material-pencil: Fixed tolerance input validation.<br>
+    :material-pencil: Line above As shows consequitve attachment id.<br>
+    :material-pencil: Separate brakes by empty row.<br>
+    :material-pencil: Added borders in main table to group by main line.<br>
+    :material-pencil: Remove message after re-evaluation request.<br>
+    :material-pencil: Measurements and expected lengths from "Measuring" sheet formatted to an integer value.<br>
+    :material-pencil: Export report to pdf, not directly to printer.<br>
+    :material-pencil: Smaller create wrokbook button.<br>
+    :material-pencil: Default measurement set to expected length.<br>
+    :material-pencil: No exception if evaluation is clicked on blank sheet.<br>
+    :material-pencil: Actual main line level obtained for generation of Pitch table and calibrated B lines table.
 
 ### v1.0.1.30 <small><small>24.09.2024</small></small>
 
