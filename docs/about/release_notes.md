@@ -7,7 +7,7 @@
 
 ### Waiting for release <small><small>TBD</small></small>
 
-### v1.0.1.40 <small><small>25.10.2024</small></small>
+### v1.0.1.41 <small><small>25.10.2024</small></small>
 
 !!! quote "Release notes"
     :material-plus-circle: Ability to recreate trimmers if required.<br>
