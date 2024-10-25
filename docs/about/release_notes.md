@@ -7,9 +7,11 @@
 
 ### Waiting for release <small><small>TBD</small></small>
 
+### v1.0.1.40 <small><small>25.10.2024</small></small>
+
 !!! quote "Release notes"
-    :material-plus-circle: TODO<br>
-    :material-pencil: TODO
+    :material-plus-circle: Ability to recreate trimmers if required.<br>
+    :material-pencil: Added trimmer setup when re-evaluated. This enables change of single lines and fixes non-responsive trimmer dropdowns.
 
 ### v1.0.1.39 <small><small>24.10.2024</small></small>
 
