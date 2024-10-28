@@ -7,6 +7,15 @@
 
 ### Waiting for release <small><small>TBD</small></small>
 
+!!! quote "Release notes"
+    :material-plus-circle:<br>
+    :material-pencil:
+
+### v1.0.1.42 <small><small>28.10.2024</small></small>
+
+!!! quote "Release notes"
+    :material-plus-circle: Added default values to trimming options and wing status checks.
+
 ### v1.0.1.41 <small><small>25.10.2024</small></small>
 
 !!! quote "Release notes"
