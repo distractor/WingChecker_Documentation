@@ -5,7 +5,7 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
-### Waiting for release <small><small>TBD</small></small>
+### v1.0.1.43 <small><small>11.11.2024</small></small>
 
 !!! quote "Release notes"
     :material-plus-circle: Default values for trim changes and tolerances.<br>
