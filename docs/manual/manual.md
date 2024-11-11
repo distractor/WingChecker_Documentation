@@ -103,6 +103,20 @@ To apply trimmers, select the desired trim option from the dropdown menu.
 
 After selection, WingChecker will automatically adjust all lines attached to the selected main line according to the chosen trim option.
 
+### Using the Auto-Trimmer
+
+WingChecker comes with different automatic trimming strategies.
+
+By clicking on the **Auto trim** button in the sheet, a new form pops up in the centre of your screen.
+
+![Auto trim strategies](../images/auto_trim_strategy_form.png){ width=70% }
+
+Here you can choose between different strategies. Pick one, and click **Run** to apply.
+
+!!! note "Auto trim strategies"
+    - **Main line deviation prority:** Will check every main line and try to adjust the trim so that the deviation from the expected length is as minimal as possible.
+    - **Minimize chordwise deviation (default):** Will try to minimize the chordwise deviation and thus reduce the unintentionall airfoil changes. Additionally, it also tries to consider left-right side symmetry.
+
 ## Finalization
 
 Before closing the workbook, ensure the following:

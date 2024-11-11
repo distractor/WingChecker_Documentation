@@ -5,11 +5,15 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
-### Waiting for release <small><small>TBD</small></small>
+### v1.0.1.43 <small><small>11.11.2024</small></small>
 
 !!! quote "Release notes"
-    :material-plus-circle:<br>
-    :material-pencil:
+    :material-plus-circle: Default values for trim changes and tolerances.<br>
+    :material-plus-circle: Trim changes marked with bold, which makes it more clear for the user.<br>
+    :material-plus-circle: Auto-trim button added to the worksheet.<br>
+    :material-plus-circle: Two auto-trimming strategies added.<br>
+    :material-pencil: Measuring sheet is zoomed-in by default.<br>
+    :material-pencil: Enabling cancel button on sheet creation form.
 
 ### v1.0.1.42 <small><small>28.10.2024</small></small>
 
