@@ -5,7 +5,7 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
-### v1.0.1.45 <small><small>12.11.2024</small></small>
+### v1.0.1.46 <small><small>12.11.2024</small></small>
 
 !!! quote "Release notes"
     :material-pencil: Removed pop-up form for auto-trimmer. Default strategy set.<br>
