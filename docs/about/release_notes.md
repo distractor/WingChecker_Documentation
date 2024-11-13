@@ -5,6 +5,12 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
+### v1.0.1.47 <small><small>13.11.2024</small></small>
+
+!!! quote "Release notes"
+    :material-pencil: Setting hidden sheets to very hidden - not visible to users.<br>
+    :material-pencil: Manual update: reduced text for autotrimmer.
+
 ### v1.0.1.46 <small><small>12.11.2024</small></small>
 
 !!! quote "Release notes"
