@@ -5,6 +5,12 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
+### v1.0.1.48 <small><small>13.11.2024</small></small>
+
+!!! quote "Release notes"
+    :material-pencil: Removed the "print report" functionality.
+
+
 ### v1.0.1.47 <small><small>13.11.2024</small></small>
 
 !!! quote "Release notes"

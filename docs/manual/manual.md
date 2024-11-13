@@ -11,15 +11,6 @@ WingChecker offers several tools designed to assist in the evaluation process. A
 
 The **Switch View** button allows you to zoom in or out while conducting measurements. This function is limited to the *Measuring* sheet and helps improve visibility during the checking process.
 
-### Print Report
-
-By selecting **Print Report**, a `PDF` version of the *Evaluation* sheet is generated, which you can save locally.
-
-[Example report](../files/example_report.pdf){ .md-button .md-button--primary }
-
-!!! question "Print report button disabled?"
-    The **Print Report** button will remain disabled until the **Evaluation** button has been clicked.
-
 ### About
 
 Clicking the **About** button provides information regarding the WingChecker Add-in, including details about the development team, version number, and other relevant technical information.
