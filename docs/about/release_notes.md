@@ -8,6 +8,13 @@
 ### v1.0.1.48 <small><small>13.11.2024</small></small>
 
 !!! quote "Release notes"
+    :material-pencil: Fixed scaling of NOVA logo on the "Evaluation" sheet.<br>
+    :material-pencil: Helper sheets set from very hidden to hidden.<br>
+    :material-pencil: Measuring sheet not locked if wing name contains character "''".
+
+### v1.0.1.48 <small><small>13.11.2024</small></small>
+
+!!! quote "Release notes"
     :material-pencil: Removed the "print report" functionality.
 
 
