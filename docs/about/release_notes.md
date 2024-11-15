@@ -5,6 +5,13 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
+### v1.0.1.49 <small><small>15.11.2024</small></small>
+
+!!! quote "Release notes"
+    :material-pencil: Fixed scaling of NOVA logo on the "Evaluation" sheet.<br>
+    :material-pencil: Helper sheets set from very hidden to hidden.<br>
+    :material-pencil: Measuring sheet not locked if wing name contains character "''".
+
 ### v1.0.1.48 <small><small>13.11.2024</small></small>
 
 !!! quote "Release notes"
