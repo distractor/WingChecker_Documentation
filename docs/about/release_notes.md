@@ -5,6 +5,11 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
+### v1.0.1.50 <small><small>19.11.2024</small></small>
+
+!!! quote "Release notes"
+    :material-plus-circle: Force reload expected lengths from measuring sheet.
+
 ### v1.0.1.49 <small><small>15.11.2024</small></small>
 
 !!! quote "Release notes"
