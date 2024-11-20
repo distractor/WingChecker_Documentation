@@ -5,6 +5,12 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
+### v1.0.1.51 <small><small>20.11.2024</small></small>
+
+!!! quote "Release notes"
+    :material-plus-circle: Added details sheet.<br>
+    :material-pencil: Trim change highlighted with color.
+
 ### v1.0.1.50 <small><small>19.11.2024</small></small>
 
 !!! quote "Release notes"
