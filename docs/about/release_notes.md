@@ -5,6 +5,14 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
+### v1.0.1.52 <small><small>05.12.2024</small></small>
+
+!!! quote "Release notes"
+    :material-plus-circle: Added trimming options for brakes.<br>
+    :material-plus-circle: Enabled auto trimmer for brakes, based on average deviation.<br>
+    :material-plus-circle: Decreasing font size, if line deviation is too large to fit into the cell.</br>
+    :material-pencil: Fixed a bug in auto-trimmer for stabilo lines.
+
 ### v1.0.1.51 <small><small>20.11.2024</small></small>
 
 !!! quote "Release notes"
