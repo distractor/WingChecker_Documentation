@@ -5,6 +5,11 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
+### v1.0.1.53 <small><small>02.01.2025</small></small>
+
+!!! quote "Release notes"
+    :material-pencil: Updated certificates.
+
 ### v1.0.1.52 <small><small>05.12.2024</small></small>
 
 !!! quote "Release notes"
