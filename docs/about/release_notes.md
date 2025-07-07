@@ -5,7 +5,12 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
-### v1.0.1.55 <small><small>01.07.2025</small></small>
+### v1.0.1.57 <small><small>07.07.2025</small></small>
+
+!!! quote "Release notes"
+    :material-pencil: Publish release version.
+
+### v1.0.1.56 <small><small>01.07.2025</small></small>
 
 !!! quote "Release notes"
     :material-pencil: Modified current trim form to use clickable table cells.<br>
