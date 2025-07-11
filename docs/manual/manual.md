@@ -94,6 +94,15 @@ To apply trimmers, select the desired trim option from the dropdown menu.
 
 After selection, WingChecker will automatically adjust all lines attached to the selected main line according to the chosen trim option.
 
+## Re-Measuring
+
+After the trim is set, click on the **Finish** button. This will re-direct you to the _Measuring_ sheet, because the lines whose trim was changed need to be re-measured.
+
+Only lines whose trim was changed, will be shown.
+
+!!! note
+    If you want to show all lines, click on the **Switch View** button from the toolbar.
+
 ### Using the Auto-Trimmer
 
 WingChecker comes with an automatic trimming strategy. By clicking on the **Auto trim** button in the sheet, WingChecker will suggest you a good trim.
