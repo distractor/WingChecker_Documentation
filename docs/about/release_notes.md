@@ -5,6 +5,14 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
+### v1.0.1.58 <small><small>11.07.2025</small></small>
+
+!!! quote "Release notes"
+    :material-pencil: Switch mode will now also unhide any hidden cells.</br>
+    :material-plus-circle: Re-measuring status if trim changed.</br>
+    :material-plus-circle: Added finish button to the evaluation sheet.</br>
+    :material-plus-circle: FAQ section.
+
 ### v1.0.1.57 <small><small>07.07.2025</small></small>
 
 !!! quote "Release notes"
