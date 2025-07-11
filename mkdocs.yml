@@ -12,6 +12,19 @@ theme:
   logo: images/logo.png
   favicon: images/favicon.ico
   custom_dir: overrides
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/weather-night
+      name: Switch to dark mode
+  - scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to light mode
 
 
 
