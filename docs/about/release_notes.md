@@ -5,6 +5,11 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
+### v1.0.1.59 <small><small>07.04.2026</small></small>
+
+!!! quote "Release notes"
+    :material-pencil: New default tolerances.
+
 ### v1.0.1.58 <small><small>11.07.2025</small></small>
 
 !!! quote "Release notes"
