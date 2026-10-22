@@ -5,6 +5,11 @@
 :material-plus-circle: - Added feature.<br>
 :material-pencil: - Fixed feature.
 
+### v1.0.1.61 <small><small>22.10.2026</small></small>
+
+!!! quote "Release notes"
+    :material-pencil: Fix total length tolerance to compare raw averages.
+
 ### v1.0.1.60 <small><small>19.10.2026</small></small>
 
 !!! quote "Release notes"
